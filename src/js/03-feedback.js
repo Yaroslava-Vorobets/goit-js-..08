@@ -33,8 +33,8 @@ function upDatePage() {
 const formSubmit = e => {
     e.preventDefault();
     const {
-        elements: { name, message }, } = e.currentTarget;    
-    console.log({ name: name, message: message.value });
+        elements: {email, message }, } = e.currentTarget;    
+    console.log({email:email.value, message: message.value });
     e.currentTarget.reset();
     remove(LOCALSTORAGE_KEY);
 }
